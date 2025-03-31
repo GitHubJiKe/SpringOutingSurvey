@@ -1,0 +1,64 @@
+
+# Spring Outing Survey PRD
+
+## 1. Overview
+A web-based form application to collect and organize information for a spring outing trip to Beijing. This form will help gather participant details, preferences, and logistical information to facilitate trip planning.
+
+## 2. User Roles
+- Trip Organizer (Admin)
+- Participants
+
+## 3. Functional Requirements
+
+### 3.1 Participant Information Section
+- Personal details (Name, Contact number, WeChat ID)
+- Emergency contact information
+- Dietary restrictions/allergies
+- Special needs/accessibility requirements
+
+### 3.2 Trip Preferences
+- Available dates selection (multiple choice)
+- Preferred activities (checkboxes):
+  - Historical sites (Forbidden City, Summer Palace)
+  - Modern attractions (Olympic Park, 798 Art Zone)
+  - Hiking (Great Wall sections)
+  - Food tours
+  - Shopping
+- Transportation preferences (bus, subway, walking)
+- Budget range selection
+
+### 3.3 Logistics
+- Accommodation preferences (hotel, hostel, shared rooms)
+- Willingness to carpool
+- T-shirt size (for group merchandise)
+
+### 3.4 Admin Features
+- Real-time response dashboard
+- Export to Excel/CSV functionality
+- Basic analytics (participant counts, preference statistics)
+- Email/SMS notification system for updates
+
+## 4. Non-Functional Requirements
+- Mobile-responsive design
+- Chinese language support
+- Form submission deadline reminder
+- Data privacy compliance (GDPR-like protections)
+- Cloud storage for responses
+
+## 5. Technical Specifications
+- Frontend: React.js with Ant Design components
+- Backend: Node.js with Express
+- Database: MongoDB for flexible schema
+- Hosting: Alibaba Cloud or Tencent Cloud for China accessibility
+
+## 6. Success Metrics
+- 90% participant completion rate
+- Submission of all required fields enforced
+- Average completion time under 5 minutes
+- 24-hour response time for organizer follow-ups
+
+## 7. Future Enhancements
+- Payment integration for deposits
+- Group chat feature
+- Itinerary builder based on responses
+- Weather integration for date recommendations
