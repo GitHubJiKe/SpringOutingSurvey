@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Outing Survey</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spring Outing Survey</h1>
+        <form id="surveyForm">
+            <div class="form-section">
+                <h2>Participant Information</h2>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Contact Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="wechat">WeChat ID</label>
+                    <input type="text" id="wechat">
+                </div>
+                <div class="form-group">
+                    <label for="emergencyContact">Emergency Contact</label>
+                    <input type="text" id="emergencyContact" required>
+                </div>
+                <div class="form-group">
+                    <label for="emergencyPhone">Emergency Phone</label>
+                    <input type="tel" id="emergencyPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="dietary">Dietary Restrictions/Allergies</label>
+                    <textarea id="dietary" rows="2"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="specialNeeds">Special Needs/Accessibility Requirements</label>
+                    <textarea id="specialNeeds" rows="2"></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Trip Preferences</h2>
+                <div class="form-group">
+                    <label>Available Dates (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="dates" value="April 5-7"> April 5-7</label>
+                        <label><input type="checkbox" name="dates" value="April 12-14"> April 12-14</label>
+                        <label><input type="checkbox" name="dates" value="April 19-21"> April 19-21</label>
+                        <label><input type="checkbox" name="dates" value="April 26-28"> April 26-28</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Activities</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="activities" value="Historical sites"> Historical sites (Forbidden City, Summer Palace)</label>
+                        <label><input type="checkbox" name="activities" value="Modern attractions"> Modern attractions (Olympic Park, 798 Art Zone)</label>
+                        <label><input type="checkbox" name="activities" value="Hiking"> Hiking (Great Wall sections)</label>
+                        <label><input type="checkbox" name="activities" value="Food tours"> Food tours</label>
+                        <label><input type="checkbox" name="activities" value="Shopping"> Shopping</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Transportation Preferences</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="transport" value="bus" checked> Bus</label>
+                        <label><input type="radio" name="transport" value="subway"> Subway</label>
+                        <label><input type="radio" name="transport" value="walking"> Walking</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="budget">Budget Range</label>
+                    <select id="budget" required>
+                        <option value="">Select budget range</option>
+                        <option value="500-1000">500-1000 RMB</option>
+                        <option value="1000-1500">1000-1500 RMB</option>
+                        <option value="1500-2000">1500-2000 RMB</option>
+                        <option value="2000+">2000+ RMB</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Logistics</h2>
+                <div class="form-group">
+                    <label for="accommodation">Accommodation Preferences</label>
+                    <select id="accommodation" required>
+                        <option value="">Select preference</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="hostel">Hostel</option>
+                        <option value="shared">Shared Rooms</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Willingness to Carpool</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="carpool" value="yes"> Yes</label>
+                        <label><input type="radio" name="carpool" value="no" checked> No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="shirtSize">T-shirt Size</label>
+                    <select id="shirtSize">
+                        <option value="">Select size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit Survey</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
